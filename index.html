@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Web</title>
+
+    <!-- Include external CSS stylesheets -->
+    <link rel="stylesheet" href="static/Css/chatbot.css">
+    <link rel="stylesheet" href="static/Css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Initialize a JavaScript variable -->
+    <script type="text/javascript">var submitted=false;</script>
+
+    <!-- Chat Bar Section -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            Chat with us!
+            <!-- Optional image, commented out -->
+            <!-- <img src="https://techincubatorqc.com/wp-content/uploads/2021/08/TechIncubator_logo-black_red-1.png" alt="" width="100px"> -->
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <!-- Chat Content -->
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            <!-- Invalid HTML tags (i and span) - remove or correct them -->
+                            <i type="submit"></i>
+                        </div>
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <!-- Input field for user messages -->
+                                <input type="text" id="textInput" class="input-box" type="text" name="msg" placeholder="Tap to send a message" autocomplete="off">
+                                <p></p>
+                            </div>
+                            <div class="chat-bar-icons">
+                                <!-- Send button -->
+                                <div id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></div>
+                            </div>
+                        </div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+Please be aware that all information provided to the bot is logged for the purpose of data analysis to enhance the bot's responses to user queries. 
+You can engage in a conversation with the bot, and if you refresh the page, the conversation will not reset. This functionality utilizes session storage, 
+allowing users to seamlessly transition between different pages on a website while maintaining their ongoing conversation with the bot.
+Furthermore, the chatbot has been optimized for mobile devices, so you can resize your browser window as needed. Note: This bot was made for Queens College Tech Incubator Website.
+AI was not use in this project as the bot was almost complete before the explosion of AI in December 2022. 
+
+</body>
+<!-- Include JavaScript libraries and scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/Scripts/chatbot.js"></script>
+<script src="static/Scripts/responses.js"></script>
+
+</html>

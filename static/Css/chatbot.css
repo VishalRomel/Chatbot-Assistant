@@ -1,0 +1,292 @@
+/* Styling for the chat bar */
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the chat button */
+.collapsible {
+    background-color: rgb(231 25 56);
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 320px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
+
+/* Styling for the minimize button */
+.minimize {
+    position: absolute;
+    right: 8%;
+    top: 5%;
+    height: 1px;
+    border: 0;
+    background: black;
+}
+
+/* Styling for the chat content container */
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+/* Styling for the full chat block */
+.full-chat-block {
+    width: 320px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Styling for the outer container of the chat */
+.outer-container {
+    min-height: 450px;
+    bottom: 0%;
+    position: relative;
+}
+
+/* Styling for the chat container */
+.chat-container {
+    max-height: 450px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+/* Hide scrollbar for webkit browsers */
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styling for the input block within the chat bar */
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+/* Styling for chat icons */
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+/* Hover effect for chat icons */
+#chat-icon:hover {
+    opacity: .7;
+}
+
+/* Styling for user input box */
+#userInput {
+    width: 75%;
+}
+
+/* Styling for the input field */
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+
+/* Styling for user messages */
+.userText {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+/* Styling for user message spans */
+.userText span {
+    text-align: left;
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards;
+}
+
+/* Styling for bot messages */
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Styling for bot message spans */
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards;
+}
+
+/* Styling for hyperlinks */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Styling for bot messages with a different class */
+.botText1 {
+    color: black;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    transition: 100ms;
+}
+
+/* Styling for bot messages with a different class spans */
+.botText1 span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: rgb(231 25 56);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 4pt;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards;
+}
+
+/* Hover effect for bot messages with a different class */
+.botText1:hover {
+    padding: 20px;
+    font-size: 100%;
+    transition: ease-in-out;
+    transition: 500ms;
+}
+
+/* Hover effect for bot messages with a different class spans */
+.botText1 span:hover {
+    background: rgb(25, 155, 231);
+    transition: 500ms;
+    box-shadow: 4px 8px 50pt rgb(25, 155, 231);
+}
+
+/* Styling for form elements within the chat */
+#form2 {
+    float: left;
+    line-height: 1.5em;
+    display: inline-block;
+    background: rgb(231 25 56);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 4pt;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards;
+}
+
+/* Styling for form input fields */
+#form2 input {
+    outline: none;
+    margin: 8px;
+    height: 2em;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+/* Styling for a specific form input field */
+#form2 input:nth-child(5) {
+    width: 85%;
+    height: 4em;
+}
+
+/* Styling for a specific button in the form */
+#form2 input:nth-child(7) {
+    padding: 0;
+    width: 150px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Keyframes animation for floating up elements */
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}
